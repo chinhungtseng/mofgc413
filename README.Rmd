@@ -1,0 +1,53 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# mofgc413
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of mofgc413 is to translate hscode to Chinese or English name.
+
+## Installation
+
+You can install the released version of mofgc413 from [Github](https://github.com/) with:
+
+``` r
+remotes::install_github("chinhungtseng/mofgc413")
+```
+
+## Example
+
+* This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(mofgc413)
+```
+
+* Search HS Code name by 2-11 digits HS Code:
+
+```{r}
+search_hscode("0101290000")
+```
+
+* Convert a hscode character vector:
+
+```{r, collapse=TRUE}
+parse_hscode(c("02", "0301", "040620", "05051000", "0106130000"))
+
+parse_hscode(c("0101210000", "0105112000", "0105141000", "0106130000"), locale = "English")
+```
+
+
