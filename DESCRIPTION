@@ -1,0 +1,14 @@
+Package: mofgc413
+Title: MOF GC 413 HS Code Translator
+Version: 0.0.1
+Description: Download hscode Chinese and English name.
+License: MIT + file LICENSE
+Authors@R: person("ChinHung", "Tseng", email = "chinhung@taitra.org.tw", role = c("aut", "cre"))
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    tibble (>= 2.1.3)
+Suggests: 
+    roxygen2 (>= 6.1.1),
+    testthat
+RoxygenNote: 6.1.1
