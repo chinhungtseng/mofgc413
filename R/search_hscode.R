@@ -1,35 +1,35 @@
 #' Search HS Code Chinese name
 #'
-#' @param hscode a character, 2 - 11 digits hscode
-#' @param chinese Chinese key word
+#' @param x a character, 2 - 11 digits hscode
+#' @param strict strict hscode
 #'
 #' @return data.frame
 #' @export
 #'
 #' @examples
 #' search_hscode("0101")
-search_hscode <- function(hscode = NULL, chinese = NULL) {
-  stopifnot(
-    !is.null(hscode) & is.null(chinese) |
-      is.null(hscode) & !is.null(chinese)
-  )
-  stopifnot(length(hscode) == 1 | is.null(hscode))
+search_hscode <- function(x, strict = FALSE) {
+  x <- as.character(unlist(x))
+  end <- ifelse(strict, "$", "")
 
-  if (is.null(chinese)) {
-    hscode <- as.character(hscode)
-    if (nchar(hscode) %% 2 != 0)
-      hscode <- substr(hscode, 1, (nchar(hscode) - 1))
-
-    output <- list(hscode)
-    while (nchar(hscode) > 2) {
-      hscode <- substr(hscode, 1, nchar(hscode) - 2)
-      output <- append(list(hscode), output)
-    }
-
-    patterns <- str2regex(unlist(output), end = "$")
+  if (all(grepl("^\\d+$", x))) {
+    if (strict) x <- unlist(lapply(x, hirahscode))
+    patterns <- str2regex(x, end = end)
     tibble::as_tibble(.full_hscode_tbl[grepl(patterns, .full_hscode_tbl$hscode), ])
   } else {
-    patterns <- str2regex(unlist(chinese), start = "", end = "")
+    patterns <- str2regex(x, start = "", end = "")
     tibble::as_tibble(.full_hscode_tbl[grepl(patterns, .full_hscode_tbl$hscode_name.C), ])
   }
+}
+
+hirahscode <- function(x) {
+  if (nchar(x) %% 2 != 0) {
+    x <- substr(x, 1, (nchar(x) - 1))
+  }
+  output <- list(x)
+  while (nchar(x) > 2) {
+    x <- substr(x, 1, nchar(x) - 2)
+    output <- append(list(x), output)
+  }
+  unlist(output)
 }

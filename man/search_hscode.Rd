@@ -4,12 +4,12 @@
 \alias{search_hscode}
 \title{Search HS Code Chinese name}
 \usage{
-search_hscode(hscode = NULL, chinese = NULL)
+search_hscode(x, strict = FALSE)
 }
 \arguments{
-\item{hscode}{a character, 2 - 11 digits hscode}
+\item{x}{a character, 2 - 11 digits hscode}
 
-\item{chinese}{Chinese key word}
+\item{strict}{strict hscode}
 }
 \value{
 data.frame

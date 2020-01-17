@@ -39,7 +39,9 @@ library(mofgc413)
 * Search HS Code name by 2-11 digits HS Code:
 
 ```{r}
-search_hscode("0101290000")
+search_hscode("0101")
+
+search_hscode("機械")
 ```
 
 * Convert a hscode character vector:

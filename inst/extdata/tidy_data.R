@@ -15,4 +15,5 @@
 }), dplyr::full_join, by = "hscode")
 
 .full_hscode_tbl <- dplyr::arrange(.full_hscode_tbl, hscode)
+.full_hscode_tbl <- .full_hscode_tbl[nchar(.full_hscode_tbl$hscode) %% 2 == 0, ]
 save(.full_hscode_tbl, file = "R/sysdata.rda", compress='xz')

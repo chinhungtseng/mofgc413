@@ -34,13 +34,40 @@ library(mofgc413)
 <!-- end list -->
 
 ``` r
-search_hscode("0101290000")
-#>       hscode    hscode_name.C                         hscode_name.E
-#> 1         01   第１章　活動物                Chapter 1 live animals
-#> 2       0101 馬、驢、騾及駃騠 Live horses, asses, mules and hinnies
-#> 7     010129             其他                                 Other
-#> 8   01012900           其他馬                     Other live horses
-#> 9 0101290000           其他馬                     Other live horses
+search_hscode("0101")
+#> # A tibble: 14 x 3
+#>    hscode     hscode_name.C    hscode_name.E                          
+#>    <chr>      <chr>            <chr>                                  
+#>  1 0101       馬、驢、騾及駃騠 Live horses, asses, mules and hinnies  
+#>  2 01012      ─馬︰            -Horses :                              
+#>  3 010121     純種繁殖用       Pure-bred breeding animals             
+#>  4 01012100   馬，純種繁殖用   Live horses, pure-bred breeding animals
+#>  5 0101210000 馬，純種繁殖用   Live horses, pure-bred breeding animals
+#>  6 010129     其他             Other                                  
+#>  7 01012900   其他馬           Other live horses                      
+#>  8 0101290000 其他馬           Other live horses                      
+#>  9 010130     驢               Asses                                  
+#> 10 01013000   驢               Live asses                             
+#> 11 0101300000 驢               Live asses                             
+#> 12 010190     其他             Other                                  
+#> 13 01019000   騾及駃騠         Live mules and hinnies                 
+#> 14 0101900000 騾及駃騠         live mules and hinnies
+
+search_hscode("機械")
+#> # A tibble: 364 x 3
+#>    hscode   hscode_name.C               hscode_name.E                      
+#>    <chr>    <chr>                       <chr>                              
+#>  1 40091240 已附配件之硫化橡膠管，供堆土機及類似機械配件用者… Tubes, pipes and hoses, of vulcani…
+#>  2 4009124… 已附配件之硫化橡膠管，供堆土機及類似機械配件用者… Tubes, pipes and hoses, of vulcani…
+#>  3 40094240 已附配件之硫化橡膠管，供堆土機及類似機械配件用者… Tubes, pipes and hoses, of vulcani…
+#>  4 4009424… 已附配件之硫化橡膠管，供堆土機及類似機械配件用者… Tubes, pipes and hoses, of vulcani…
+#>  5 401170   供農業或森林車及機械之用者  Of a kind used on agricultural or …
+#>  6 40117010 具有「鯡骨」或類似面紋，供農業或森林車及機械之用者… "Having a \"herring-bone\" or simi…
+#>  7 4011701… 具有「鯡骨」或類似面紋，供農業或森林車及機械之用者… "Having a \"\"herring-bone\"\" or …
+#>  8 40117090 其他新橡膠氣胎，供農業或森林車及機械之用者… Other new pneumatic tyres, of rubb…
+#>  9 4011709… 其他新橡膠氣胎，供農業或森林車及機械之用者… Other new pneumatic tyres, of rubb…
+#> 10 401180   供建築、礦業或工業操作車及機械之用… Of a kind used on construction, mi…
+#> # … with 354 more rows
 ```
 
   - Convert a hscode character vector:
