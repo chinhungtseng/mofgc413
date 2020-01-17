@@ -35,26 +35,25 @@ library(mofgc413)
 
 ``` r
 search_hscode("0101")
-#> # A tibble: 14 x 3
+#> # A tibble: 13 x 3
 #>    hscode     hscode_name.C    hscode_name.E                          
 #>    <chr>      <chr>            <chr>                                  
 #>  1 0101       馬、驢、騾及駃騠 Live horses, asses, mules and hinnies  
-#>  2 01012      ─馬︰            -Horses :                              
-#>  3 010121     純種繁殖用       Pure-bred breeding animals             
-#>  4 01012100   馬，純種繁殖用   Live horses, pure-bred breeding animals
-#>  5 0101210000 馬，純種繁殖用   Live horses, pure-bred breeding animals
-#>  6 010129     其他             Other                                  
-#>  7 01012900   其他馬           Other live horses                      
-#>  8 0101290000 其他馬           Other live horses                      
-#>  9 010130     驢               Asses                                  
-#> 10 01013000   驢               Live asses                             
-#> 11 0101300000 驢               Live asses                             
-#> 12 010190     其他             Other                                  
-#> 13 01019000   騾及駃騠         Live mules and hinnies                 
-#> 14 0101900000 騾及駃騠         live mules and hinnies
+#>  2 010121     純種繁殖用       Pure-bred breeding animals             
+#>  3 01012100   馬，純種繁殖用   Live horses, pure-bred breeding animals
+#>  4 0101210000 馬，純種繁殖用   Live horses, pure-bred breeding animals
+#>  5 010129     其他             Other                                  
+#>  6 01012900   其他馬           Other live horses                      
+#>  7 0101290000 其他馬           Other live horses                      
+#>  8 010130     驢               Asses                                  
+#>  9 01013000   驢               Live asses                             
+#> 10 0101300000 驢               Live asses                             
+#> 11 010190     其他             Other                                  
+#> 12 01019000   騾及駃騠         Live mules and hinnies                 
+#> 13 0101900000 騾及駃騠         live mules and hinnies
 
 search_hscode("機械")
-#> # A tibble: 364 x 3
+#> # A tibble: 348 x 3
 #>    hscode   hscode_name.C               hscode_name.E                      
 #>    <chr>    <chr>                       <chr>                              
 #>  1 40091240 已附配件之硫化橡膠管，供堆土機及類似機械配件用者… Tubes, pipes and hoses, of vulcani…
@@ -67,7 +66,7 @@ search_hscode("機械")
 #>  8 40117090 其他新橡膠氣胎，供農業或森林車及機械之用者… Other new pneumatic tyres, of rubb…
 #>  9 4011709… 其他新橡膠氣胎，供農業或森林車及機械之用者… Other new pneumatic tyres, of rubb…
 #> 10 401180   供建築、礦業或工業操作車及機械之用… Of a kind used on construction, mi…
-#> # … with 354 more rows
+#> # … with 338 more rows
 ```
 
   - Convert a hscode character vector:
