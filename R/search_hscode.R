@@ -27,7 +27,7 @@ search_hscode <- function(hscode = NULL, chinese = NULL) {
     }
 
     patterns <- str2regex(unlist(output), end = "$")
-    .full_hscode_tbl[grepl(patterns, .full_hscode_tbl$hscode), ]
+    tibble::as_tibble(.full_hscode_tbl[grepl(patterns, .full_hscode_tbl$hscode), ])
   } else {
     patterns <- str2regex(unlist(chinese), start = "", end = "")
     tibble::as_tibble(.full_hscode_tbl[grepl(patterns, .full_hscode_tbl$hscode_name.C), ])
