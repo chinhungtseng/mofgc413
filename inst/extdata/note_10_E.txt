@@ -7275,7 +7275,7 @@ HS_NO       NOTE
 6109903000 T-shirts, singlets and other vests, knitted or crocheted, of silk or silk waste
 6109909000 T-shirts, singlets and other vests, knitted or crocheted, of other textile materials
 6110110000 Jerseys, pullovers, cardigans, waist-coats and similar articles, knitted or crocheted, of wool
-6110120000 Jerseys, pullovers, cardigans, wais-tcoats and similar articles, knitted or crocheted, of  kashmir (cashmere) hair 
+6110120000 Jerseys, pullovers, cardigans, waist-coats and similar articles, knitted or crocheted, of  kashmir (cashmere) hair 
 6110190000 Jerseys, pullovers, cardigans, waist-coats and similar articles, knitted or crocheted, of other animal fine hair
 6110200000 Jerseys, pullovers, cardigans, waist-coats and similar articles, knitted or crocheted, of cotton
 6110300000 Jerseys, pullovers, cardigans, waist-coats and similar articles, knitted or crocheted, of man-made fibres
@@ -7603,8 +7603,10 @@ HS_NO       NOTE
 6307903090 Bullet-proof clothing and the like
 6307904010 Protective apparel for epidemic prevention
 6307904090 Other firemen's fire-proof clothing, poison-proof clothing, rescue bags and the like
-6307905010 Masks, filtering efficiency 94% or more, of textile materials
-6307905020 Other masks, of textile materials
+6307905011 Woven or knitted masks without filter, filtering efficiency 94% or more, of textile materials
+6307905019 Other masks, filtering efficiency 94% or more, of textile materials
+6307905021 Other woven or knitted masks without filter, of textile materials
+6307905029 Other masks, of textile materials
 6307909010 Shoe covers for epidemic prevention (including for surgical use), of textile materials
 6307909030 nonwoven filters, which are bags or made up cloths
 6307909090 Other made up textile articles
@@ -9705,7 +9707,8 @@ HS_NO       NOTE
 8412319000 Other pneumatic power engines and motors, linear acting (cylinders)
 8412390000 Other pneumatic power engines and motors
 8412800000 Other engines and motors
-8412900000 Parts of other engines and motors
+8412900010 Blades for wind engines or wind turbines of wind-powered generating sets
+8412900090 Parts of other engines and motors
 8413110000 Pumps for dispensing fuel or lubricants, of the type used in filling-stations or in garages
 8413190000 Other pumps for liquids, fitted or designed to be fitted with a measuring device
 8413200000 Hand pumps, other than those of subheading 8413.11 or 8413.19

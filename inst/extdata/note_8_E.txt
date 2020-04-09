@@ -9652,7 +9652,7 @@ Bregmacerotidae, Euclichthyidae, Gadidae, Macrouridae, Melanonidae, Merlucciidae
 611011   Of wool
 61101100 Jerseys, pullovers, cardigans, waist-coats and similar articles, knitted or crocheted, of wool
 611012   Of  kashmir (cashmere) goats
-61101200 Jerseys, pullovers, cardigans, wais-tcoats and similar articles, knitted or crocheted, of  kashmir (cashmere) hair
+61101200 Jerseys, pullovers, cardigans, waist-coats and similar articles, knitted or crocheted, of  kashmir (cashmere) hair
 611019   Other
 61101900 Jerseys, pullovers, cardigans, waist-coats and similar articles, knitted or crocheted, of other animal fine hair
 611020   Of cotton
